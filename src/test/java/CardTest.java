@@ -50,6 +50,9 @@ public class CardTest {
         open("http://localhost:9999/");
         $("[data-test-id=\"city\"] input").setValue("Москва");
         $("[data-test-id=\"name\"] input").setValue("Вещий Олег");
+        $("[data-test-id=\"date\"] input").click();
+        $("[data-test-id=\"date\"] input").clear();
+        $("[data-test-id=\"date\"] input").setValue("22122023");
         $("[data-test-id=\"phone\"] input").setValue("+79024417754");
         $("[data-test-id=\"agreement\"]").click();
         $(byText("Забронировать")).click();
